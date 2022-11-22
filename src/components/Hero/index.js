@@ -29,7 +29,7 @@ const Hero = ({ cart, setCart, handleChange }) => {
       <HeroContent>
         <HeroItems>
           <HeroH1> Best Restuarant in Town</HeroH1>
-          <HeroP>Ready in 60sec</HeroP>
+          {/* <HeroP>Ready in 60sec</HeroP> */}
           <HeroP>
             Cameroon cuisine is refined cuisine thanks to the use of spice
             blends that create the most epic meals. Cameroon has a mix of a
