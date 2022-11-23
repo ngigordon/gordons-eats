@@ -32,11 +32,11 @@ const Product = ({ heading, data, handleClick }) => {
                 <ProductImg src={product.img} alt={product.alt} />
                 <ProductInfo>
                   <ProductTitle>{product.name}</ProductTitle>
-                  {/* <ProductDesc>{product.desc}</ProductDesc>
-                <ProductPrice>{product.price}</ProductPrice> */}
-                  {/* <ProductButton onClick={() => handleClick()}>
-                  {product.button}
-                </ProductButton> */}
+                  <ProductDesc>{product.desc}</ProductDesc>
+                  <ProductPrice>{product.price}</ProductPrice>
+                  <ProductButton onClick={() => handleClick()}>
+                    {product.button}
+                  </ProductButton>
                 </ProductInfo>
               </Link>
             </ProductCard>

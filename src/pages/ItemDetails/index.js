@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
-import { productData, productDataTwo } from "../Products/data";
+import { productData, productDataTwo } from "../../components/Products/data";
 import {
   ProductTitle,
   ProductCard,

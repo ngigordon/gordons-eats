@@ -12,8 +12,8 @@ import Hero from "./components/Hero";
 import Product from "./components/Products";
 import Feature from "./components/Features";
 import Footer from "./components/Footer";
-import Homepage from "./components/Home";
-import ItemDetails from "./components/ItemDetails";
+import Homepage from "./pages/Home";
+import ItemDetails from "./pages/ItemDetails";
 import Navbar from "./components/Navbar";
 function App() {
   const [cart, setCart] = useState([]);

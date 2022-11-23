@@ -1,7 +1,7 @@
 import React from "react";
-import Feature from "../Features";
-import Hero from "../Hero";
-import Product from "../Products";
+import Feature from "../../components/Features";
+import Hero from "../../components/Hero";
+import Product from "../../components/Products";
 import { productData, productDataTwo } from "../../components/Products/data";
 import { GlobalStyle } from "../../globalStyle";
 
