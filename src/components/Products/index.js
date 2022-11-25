@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { formatCurrency } from "../../utilities/formatCurrency";
 import {
   ProductsContainer,
   ProductWrapper,
@@ -26,19 +27,18 @@ const Product = ({ heading, data, handleClick }) => {
         {data.map((product, index) => {
           return (
             <ProductCard key={index}>
-              <Link
-                to={`/itemDetail/${product.productID}/${product.price}/${product.name}`}
+              to=
+              {`/itemDetail/${product.productID}/${product.price}/${product.name}`}
               >
-                <ProductImg src={product.img} alt={product.alt} />
-                <ProductInfo>
-                  <ProductTitle>{product.name}</ProductTitle>
-                  <ProductDesc>{product.desc}</ProductDesc>
-                  <ProductPrice>{product.price}</ProductPrice>
-                  <ProductButton onClick={() => handleClick()}>
-                    {product.button}
-                  </ProductButton>
-                </ProductInfo>
-              </Link>
+              <ProductImg src={product.img} alt={product.alt} />
+              <ProductInfo>
+                <ProductTitle>{product.name}</ProductTitle>
+                <ProductDesc>{product.desc}</ProductDesc>
+                <ProductPrice>{formatCurrency(product.price)}FCFA</ProductPrice>
+                <ProductButton onClick={() => handleClick()}>
+                  {product.button}
+                </ProductButton>
+              </ProductInfo>
             </ProductCard>
           );
         })}

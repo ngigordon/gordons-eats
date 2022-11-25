@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { NavLink as link } from "react-router-dom";
 import { FaCartArrowDown } from "react-icons/fa";
 export const Nav = styled.nav`
+  /* position: sticky; */
   background: transparent;
   height: 80px;
   display: flex;
@@ -21,34 +22,32 @@ export const NavLink = styled(link)`
   align-items: center;
   text-decoration: none;
   cursor: pointer;
-  flex: 0.7;
   @media screen and (max-width: 600px) {
-    /* position: absolute;
+    position: absolute;
     top: 20px;
-    left: 5px; */
+    left: 5px;
     justify-content: space-between;
     font-size: 1.5rem;
   }
 `;
 
 export const NavIcons = styled.div`
-  /* display: block;
+  display: block;
   position: absolute;
   top: 0;
   right: 0;
-  cursor: pointer; */
-  flex: 0.3;
-  display: flex;
+  cursor: pointer;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   color: #fff;
   p {
-    /* transform: translate(-175%, 100%); */
+    transform: translate(-150%, 170%);
     font-weight: bold;
   }
 `;
 
 export const Bars = styled(FaCartArrowDown)`
-  font-size: 5rem;
-  /* transform: translate(-50%, -15%); */
+  font-size: 3rem;
+  transform: translate(-50%, -15%);
 `;
